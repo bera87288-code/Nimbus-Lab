@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nimbus Lab | Student Registration</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="cursor-light"></div>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="logo">
+        Nimbus <span>Lab</span><i></i>
+    </div>
+
+    <nav>
+        <a class="active" href="index.html">Home</a>
+        <a href="#services">Service</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+</header>
+
+
+<!-- ================= MAIN ================= -->
+
+<main class="main-container">
+
+<section class="portal-wrap">
+
+    <div class="top-heading">
+
+        <span class="eyebrow">
+            NIMBUS LAB • STUDENT PORTAL
+        </span>
+
+        <h1>
+            Build Your <span>Digital Identity.</span>
+        </h1>
+
+        <p>
+            Create your student account and unlock your personalized portal.
+        </p>
+
+    </div>
+
+
+    <!-- PROGRESS -->
+
+    <div class="steps">
+
+        <div class="step active" id="step1">
+            <b>01</b>
+            <span>Profile</span>
+        </div>
+
+        <div class="step-line">
+            <i id="progressLine"></i>
+        </div>
+
+        <div class="step" id="step2">
+            <b>02</b>
+            <span>Academic</span>
+        </div>
+
+        <div class="step-line">
+            <i></i>
+        </div>
+
+        <div class="step" id="step3">
+            <b>03</b>
+            <span>Security</span>
+        </div>
+
+    </div>
+
+
+    <!-- ================= GRID ================= -->
+
+    <div class="portal-grid">
+
+
+        <!-- ================= FORM ================= -->
+
+        <div class="form-card">
+
+            <div class="card-glow"></div>
+
+            <div class="form-heading">
+
+                <span class="badge">
+                    NEW STUDENT
+                </span>
+
+                <h2>Create Account</h2>
+
+                <p>
+                    Fill in your details. Your digital student card updates live.
+                </p>
+
+            </div>
+
+
+            <form id="registrationForm">
+
+
+                <!-- PERSONAL -->
+
+                <div class="section-label">
+                    PERSONAL PROFILE
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="name">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="e.g. Jeet Bera"
+                    >
+
+                    <small id="nameError"></small>
+
+                </div>
+
+
+                <div class="two-col">
+
+                    <div class="input-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="you@example.com"
+                        >
+
+                        <small id="emailError"></small>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="mobile">
+                            Mobile Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="mobile"
+                            maxlength="10"
+                            placeholder="10 digit number"
+                        >
+
+                        <small id="mobileError"></small>
+
+                    </div>
+
+                </div>
+
+
+                <!-- GENDER + DOB -->
+
+                <div class="two-col">
+
+                    <div class="input-group">
+
+                        <label>
+                            Gender
+                        </label>
+
+                        <div class="gender-box">
+
+                            <label class="radio-option">
+                                <input
+                                    type="radio"
+                                    name="gender"
+                                    value="Male"
+                                >
+                                Male
+                            </label>
+
+                            <label class="radio-option">
+                                <input
+                                    type="radio"
+                                    name="gender"
+                                    value="Female"
+                                >
+                                Female
+                            </label>
+
+                            <label class="radio-option">
+                                <input
+                                    type="radio"
+                                    name="gender"
+                                    value="Other"
+                                >
+                                Other
+                            </label>
+
+                        </div>
+
+                        <small id="genderError"></small>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="dob">
+                            Date of Birth
+                        </label>
+
+                        <input
+                            type="date"
+                            id="dob"
+                        >
+
+                        <small id="dobError"></small>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ACADEMIC -->
+
+                <div class="section-label">
+                    ACADEMIC PROFILE
+                </div>
+
+
+                <div class="two-col">
+
+                    <div class="input-group">
+
+                        <label for="course">
+                            Select Course
+                        </label>
+
+                        <select id="course">
+
+                            <option value="">
+                                Choose course
+                            </option>
+
+                            <option value="BCA">
+                                BCA
+                            </option>
+
+                            <option value="BBA">
+                                BBA
+                            </option>
+
+                            <option value="B.Sc">
+                                B.Sc
+                            </option>
+
+                            <option value="B.Com">
+                                B.Com
+                            </option>
+
+                        </select>
+
+                        <small id="courseError"></small>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="semester">
+                            Semester
+                        </label>
+
+                        <select id="semester">
+
+                            <option value="">
+                                Choose semester
+                            </option>
+
+                            <option value="1st Semester">
+                                1st Semester
+                            </option>
+
+                            <option value="2nd Semester">
+                                2nd Semester
+                            </option>
+
+                            <option value="3rd Semester">
+                                3rd Semester
+                            </option>
+
+                            <option value="4th Semester">
+                                4th Semester
+                            </option>
+
+                            <option value="5th Semester">
+                                5th Semester
+                            </option>
+
+                            <option value="6th Semester">
+                                6th Semester
+                            </option>
+
+                        </select>
+
+                        <small id="semesterError"></small>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SECURITY -->
+
+                <div class="section-label">
+                    SECURITY
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="password">
+                        Create Password
+                    </label>
+
+                    <div class="password-wrap">
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Minimum 6 characters"
+                        >
+
+                        <button
+                            type="button"
+                            class="eye-btn"
+                            data-target="password"
+                        >
+                            ◉
+                        </button>
+
+                    </div>
+
+
+                    <div class="strength">
+
+                        <div class="strength-bar">
+                            <i id="strengthBar"></i>
+                        </div>
+
+                        <span id="strengthText">
+                            Password strength
+                        </span>
+
+                    </div>
+
+                    <small id="passwordError"></small>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="confirmPassword">
+                        Confirm Password
+                    </label>
+
+                    <div class="password-wrap">
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            placeholder="Re-enter your password"
+                        >
+
+                        <button
+                            type="button"
+                            class="eye-btn"
+                            data-target="confirmPassword"
+                        >
+                            ◉
+                        </button>
+
+                    </div>
+
+                    <small id="confirmPasswordError"></small>
+
+                </div>
+
+
+                <!-- BUTTON -->
+
+                <button
+                    type="submit"
+                    class="main-btn"
+                >
+
+                    <span>
+                        Create Digital Account
+                    </span>
+
+                    <b>→</b>
+
+                </button>
+
+
+                <div
+                    id="successMessage"
+                    class="success-message"
+                ></div>
+
+            </form>
+
+
+            <div class="switch-page">
+
+                Already registered?
+
+                <a href="login.html">
+                    Enter Student Portal →
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= DIGITAL CARD ================= -->
+
+        <aside class="id-preview">
+
+            <div class="preview-top">
+
+                <span>
+                    LIVE PREVIEW
+                </span>
+
+                <i>
+                    ● ONLINE
+                </i>
+
+            </div>
+
+
+            <div class="student-card">
+
+                <div class="card-noise"></div>
+
+
+                <div class="card-header">
+
+                    <strong>
+                        NIMBUS <span>LAB</span>
+                    </strong>
+
+                    <em>
+                        STUDENT ID
+                    </em>
+
+                </div>
+
+
+                <div
+                    class="avatar"
+                    id="avatar"
+                >
+                    N
+                </div>
+
+
+                <div
+                    class="student-name"
+                    id="previewName"
+                >
+                    YOUR NAME
+                </div>
+
+
+                <div
+                    class="student-course"
+                    id="previewCourse"
+                >
+                    COURSE • SEMESTER
+                </div>
+
+
+                <div class="id-info">
+
+                    <div>
+
+                        <small>
+                            STUDENT ID
+                        </small>
+
+                        <b id="previewId">
+                            NL-2026-XXXX
+                        </b>
+
+                    </div>
+
+
+                    <div>
+
+                        <small>
+                            STATUS
+                        </small>
+
+                        <b class="verified">
+                            ● VERIFIED PREVIEW
+                        </b>
+
+                    </div>
+
+                </div>
+
+
+                <div class="mini-code">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+            </div>
+
+
+            <div class="preview-note">
+
+                <span>
+                    ✦
+                </span>
+
+                <div>
+
+                    <b>
+                        Digital Identity
+                    </b>
+
+                    <p>
+                        Your profile card reacts as you type.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer
+    class="footer"
+    id="contact"
+>
+
+    <p>
+        © 2026 Nimbus Lab • Student Registration & Authentication System
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Nimbus Lab | Student Login
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+<div class="cursor-light"></div>
+
+
+<!-- HEADER -->
+
+<header class="header">
+
+    <div class="logo">
+
+        Nimbus <span>Lab</span><i></i>
+
+    </div>
+
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="index.html#services">
+            Service
+        </a>
+
+        <a href="index.html#contact">
+            Contact
+        </a>
+
+    </nav>
+
+</header>
+
+
+<!-- MAIN -->
+
+<main class="main-container login-main">
+
+<section class="login-layout">
+
+
+    <!-- LEFT SIDE -->
+
+    <div class="login-copy">
+
+        <span class="eyebrow">
+            SECURE ACCESS • NIMBUS LAB
+        </span>
+
+
+        <h1>
+
+            Welcome
+
+            <br>
+
+            <span>
+                back, student.
+            </span>
+
+        </h1>
+
+
+        <p>
+
+            Your digital identity is waiting.
+            Verify your account to enter the student portal.
+
+        </p>
+
+
+        <div class="scan-line"></div>
+
+
+        <div class="secure-points">
+
+            <span>
+                ✓ Identity check
+            </span>
+
+            <span>
+                ✓ Secure validation
+            </span>
+
+            <span>
+                ✓ Instant access
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- LOGIN CARD -->
+
+    <div class="form-card login-card">
+
+        <div class="card-glow"></div>
+
+
+        <div class="form-heading">
+
+            <span class="badge">
+                IDENTITY CHECK
+            </span>
+
+            <h2>
+                Enter Portal
+            </h2>
+
+            <p>
+                Use the email and password from your registration.
+            </p>
+
+        </div>
+
+
+        <form id="loginForm">
+
+
+            <div class="input-group">
+
+                <label for="loginEmail">
+                    Username / Email
+                </label>
+
+                <input
+                    type="email"
+                    id="loginEmail"
+                    placeholder="you@example.com"
+                >
+
+                <small id="loginEmailError"></small>
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label for="loginPassword">
+                    Password
+                </label>
+
+
+                <div class="password-wrap">
+
+                    <input
+                        type="password"
+                        id="loginPassword"
+                        placeholder="Enter your password"
+                    >
+
+                    <button
+                        type="button"
+                        class="eye-btn"
+                        data-target="loginPassword"
+                    >
+                        ◉
+                    </button>
+
+                </div>
+
+
+                <small id="loginPasswordError"></small>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="main-btn"
+            >
+
+                <span>
+                    Verify & Enter
+                </span>
+
+                <b>
+                    →
+                </b>
+
+            </button>
+
+
+            <div
+                id="loginMessage"
+                class="success-message"
+            ></div>
+
+        </form>
+
+
+        <div class="switch-page">
+
+            New student?
+
+            <a href="index.html">
+                Create your digital identity →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer class="footer">
+
+    <p>
+        © 2026 Nimbus Lab • Secure Student Portal
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
